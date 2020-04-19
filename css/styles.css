@@ -18,6 +18,23 @@ body {
   overflow: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 4px rgba(160, 159, 159, 0.8);
+  box-shadow: inset 0 0 4px rgba(160, 159, 159, 0.8);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 4px rgba(131, 131, 131, 0.8);
+  box-shadow: inset 0 0 4px rgba(131, 131, 131, 0.8);
+}
+
 /*#region navigation region */
 .header {
   display: block;
