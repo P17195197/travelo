@@ -18,53 +18,6 @@ body {
   overflow: hidden;
 }
 
-.hamburger-menu {
-  display: none;
-  margin-left: auto !important;
-  font-size: 24px;
-  padding: 10px;
-  color: #fff;
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-.close-button {
-  margin-left: auto;
-  font-size: 24px;
-  padding: 10px;
-  color: #393939;
-  right: 25px;
-  width: 21px;
-  cursor: pointer;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.full-menu {
-  display: block;
-  visibility: visible;
-  opacity: 1;
-  right: 0;
-  position: fixed;
-  top: 0;
-  width: 50vw;
-  height: 100vh;
-  background: #ffffff;
-  z-index: 1000;
-  transition: all 0.6s ease;
-}
-
-.menu-container {
-  position: absolute;
-  width: 100%;
-  top: 150px;
-  left: 0;
-  padding-left: 15%;
-  padding-right: 79px;
-}
-
 /*#region navigation region */
 .header {
   display: block;
@@ -185,6 +138,53 @@ ul {
   margin-top: 0;
 }
 
+.hamburger-menu {
+  display: none;
+  margin-left: auto !important;
+  font-size: 24px;
+  padding: 10px;
+  color: #fff;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.close-button {
+  margin-left: auto;
+  font-size: 24px;
+  padding: 10px;
+  color: #393939;
+  right: 25px;
+  width: 21px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.full-menu {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  right: 0;
+  position: fixed;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 1000;
+  transition: all 0.6s ease;
+}
+
+.menu-container {
+  position: absolute;
+  width: 100%;
+  top: 150px;
+  left: 0;
+  padding-left: 15%;
+  padding-right: 79px;
+}
+
 /*#endregion*/
 
 /*#region body styles */
@@ -221,6 +221,38 @@ div {
   max-width: 100%;
 }
 
+.col-half {
+  position: relative;
+  width: 50%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 50%;
+}
+
+.col-third {
+  position: relative;
+  width: 33.3%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 33.3%;
+}
+
+.col-fourth {
+  position: relative;
+  width: 25%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  /* flex-basis: 0;
+  flex-grow: 1; */
+  max-width: 25%;
+}
 /*#endregion */
 
 /*#region home screen region */
@@ -299,7 +331,67 @@ div {
 #planning-bg-img {
   background-image: url(../images/planning-bg.jpg);
 }
+
+.find-text {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center !important;
+}
+
+.search-form {
+  color: #fff;
+}
+
+.input {
+  width: 100%;
+  height: 56px;
+  outline: none;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 52px;
+  color: #ffffff;
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  background: transparent;
+  padding-left: 20px;
+}
+
+.input-label {
+  font-size: 12px;
+}
+
+.input-select {
+  width: 100%;
+  height: 62px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 52px;
+  color: #e86161;
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  background: transparent;
+  padding-left: 20px;
+}
+
+.search-button {
+  display: inline-block;
+  width: 161px;
+  height: 62px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 52px;
+  padding-left: 46px;
+  padding-right: 46px;
+  background: #fe435b !important;
+  transform: translateY(19px);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 /*#endregion */
+
 /*#region tablet styles */
 @media screen and (min-width: 500px) and (max-width: 999px) {
   /* applies to screens wider than 499px */
@@ -331,6 +423,20 @@ div {
 
   .nav-item.active::after {
     display: none;
+  }
+
+  .input-label {
+    font-size: 9px;
+  }
+
+  .col-half {
+    padding-left: 0;
+    padding-right: 5px;
+  }
+
+  .col-price {
+    padding-left: 0;
+    padding-right: 5px;
   }
 }
 
@@ -368,6 +474,35 @@ div {
 
   .nav-item.active::after {
     display: none;
+  }
+
+  .find-text {
+    font-size: 20px;
+  }
+
+  .col-half {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 5px;
+  }
+
+  .col-third {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .col-fourth {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .col-price {
+    padding-right: 5px;
+  }
+
+  .price-row {
+    left: 15px;
   }
 }
 

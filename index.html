@@ -85,7 +85,75 @@
       </div>
     </div>
     <div id="planning" class="site-section">
-      <div id="planning-bg-img" class="planning-section"></div>
+      <div id="planning-bg-img" class="planning-section">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="find-text">
+                Find the adventure of a lifetime
+              </div>
+            </div>
+          </div>
+          <form id="search-form" class="search-form">
+            <div class="row">
+              <div class="col-fourth">
+                <label for="input-destination" class="input-label"
+                  >Destination</label
+                >
+                <input
+                  id="input-destination"
+                  class="input"
+                  placeholder="type your destination..."
+                  required="true"
+                />
+              </div>
+              <div class="col-fourth">
+                <label for="input-adventure" class="input-label"
+                  >Adventure Type</label
+                >
+                <select id="input-adventure" class="input-select">
+                  <option value="solo">Solo</option>
+                  <option value="solo">Group</option>
+                  <option value="solo">Strangers</option>
+                </select>
+              </div>
+              <div class="col-fourth price-row">
+                <div class="row">
+                  <div class="col-half col-price">
+                    <label for="input-pricerange" class="input-label"
+                      >Price Range</label
+                    >
+                    <select id="input-minprice" class="input-select">
+                      <option value="250">Under 250</option>
+                      <option value="500">250-500</option>
+                      <option value="1000">500-1000</option>
+                      <option value="3000">1000-3000</option>
+                      <option value="5000">3000-5000</option>
+                      <option value="10000">Above 5000</option>
+                    </select>
+                  </div>
+                  <div class="col-half">
+                    <label for="input-people" class="input-label"
+                      >No. of people</label
+                    >
+                    <select id="input-people" class="input-select">
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                      <option value="4">Four</option>
+                      <option value="5">Five</option>
+                      <option value="6">Above 5</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-fourth">
+                <button class="search-button">Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <div id="offers" class="site-section offers-section"></div>
     <div id="news" class="site-section news-section"></div>
