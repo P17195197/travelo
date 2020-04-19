@@ -2,6 +2,9 @@
 
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Montserrat", "Lucida Sans", "Lucida Sans Regular",
