@@ -253,6 +253,12 @@ div {
   flex-grow: 1; */
   max-width: 25%;
 }
+
+.full-container {
+  width: 100%;
+  background: #ffffff;
+  padding-bottom: 106px;
+}
 /*#endregion */
 
 /*#region home screen region */
@@ -390,6 +396,51 @@ div {
   outline: none;
   cursor: pointer;
 }
+
+.section-title {
+  padding-top: 111px;
+  line-height: 1.1;
+  text-align: center !important;
+}
+
+.section-title h2 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #131a2f;
+  font-family: "Montserrat", sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.destination-album {
+  margin-top: 60px;
+}
+
+.destination-img {
+  max-width: 100%;
+}
+
+.destination-package {
+  position: absolute;
+  left: 33px;
+  bottom: 29px;
+}
+
+.destination-price {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.destination-location {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 2px;
+}
+
 /*#endregion */
 
 /*#region tablet styles */
