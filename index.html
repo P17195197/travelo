@@ -5,10 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travelo</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="no-margin">
-    <div class="super-container">
+    <div class="super-container" id="home">
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="header-container">
+                <div class="logo-container">
+                  <div class="logo">
+                    <div class="company-name">travelo</div>
+                    <div class="company-tagline">tour planning</div>
+                    <div class="logo-img">
+                      <img src="images/logo.png" alt="Travelo" />
+                    </div>
+                  </div>
+                </div>
+                <nav class="nav-container">
+                  <ul class="nav-list hamburger-menu" id="hamburger-menu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                  </ul>
+                  <ul class="nav-list main-menu">
+                    <li class="nav-item active"><a href="#home">Home</a></li>
+                    <li class="nav-item"><a href="#planning">Planning</a></li>
+                    <li class="nav-item"><a href="#offers">Offers</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                  </ul>
+                  <div id="full-menu" class="full-menu hidden">
+                    <div class="close-container">
+                      <div class="close-button" id="close-button">x</div>
+                    </div>
+                    <div class="menu-item-container">
+                      <div class="menu-items">
+                        <ul>
+                          <li class="nav-item active">
+                            <a href="#home">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#planning">Planning</a>
+                          </li>
+                          <li class="nav-item"><a href="#offers">Offers</a></li>
+                          <li class="nav-item">
+                            <a href="#contact">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
       <div class="home">
         <div id="home-bg-img" class="home-background"></div>
         <div class="home-content">
@@ -23,7 +82,153 @@
         </div>
       </div>
     </div>
-
+    <div id="planning" class="site-section">
+      <div class="full-container">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="section-title">
+                <h2>Top destinations in Europe</h2>
+                <div class="uppercase">take a look at these plans</div>
+              </div>
+            </div>
+          </div>
+          <div class="row destination-album" id="destination-album">
+            <div class="col-fourth">
+              <img
+                src="./images/paris.jpg"
+                class="destination-img"
+                alt="Paris"
+              />
+              <div class="destination-package">
+                <div class="destination-price">
+                  From €450
+                </div>
+                <div class="destination-location">
+                  Paris, France
+                </div>
+              </div>
+            </div>
+            <div class="col-fourth">
+              <img
+                src="./images/italy.jpg"
+                class="destination-img"
+                alt="Italy"
+              />
+              <div class="destination-package">
+                <div class="destination-price">
+                  From €550
+                </div>
+                <div class="destination-location">
+                  Rome, Italy
+                </div>
+              </div>
+            </div>
+            <div class="col-fourth">
+              <img
+                src="./images/greece.jpg"
+                class="destination-img"
+                alt="Greece"
+              />
+              <div class="destination-package">
+                <div class="destination-price">
+                  From €550
+                </div>
+                <div class="destination-location">
+                  Santorini, Greece
+                </div>
+              </div>
+            </div>
+            <div class="col-fourth">
+              <img
+                src="./images/croatia.jpg"
+                class="destination-img"
+                alt="Croatia"
+              />
+              <div class="destination-package">
+                <div class="destination-price">
+                  From €600
+                </div>
+                <div class="destination-location">
+                  Split, Croatia
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="planning-bg-img" class="planning-section">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="find-text">
+                Find the adventure of a lifetime
+              </div>
+            </div>
+          </div>
+          <form id="search-form" class="search-form">
+            <div class="row">
+              <div class="col-fourth">
+                <label for="input-destination" class="input-label"
+                  >Destination</label
+                >
+                <input
+                  id="input-destination"
+                  class="input"
+                  placeholder="type your destination..."
+                  required="true"
+                />
+              </div>
+              <div class="col-fourth">
+                <label for="input-adventure" class="input-label"
+                  >Adventure Type</label
+                >
+                <select id="input-adventure" class="input-select">
+                  <option value="solo">Solo</option>
+                  <option value="solo">Group</option>
+                  <option value="solo">Strangers</option>
+                </select>
+              </div>
+              <div class="col-fourth price-row">
+                <div class="row">
+                  <div class="col-half col-price">
+                    <label for="input-pricerange" class="input-label"
+                      >Price Range</label
+                    >
+                    <select id="input-minprice" class="input-select">
+                      <option value="250">Under 250</option>
+                      <option value="500">250-500</option>
+                      <option value="1000">500-1000</option>
+                      <option value="3000">1000-3000</option>
+                      <option value="5000">3000-5000</option>
+                      <option value="10000">Above 5000</option>
+                    </select>
+                  </div>
+                  <div class="col-half">
+                    <label for="input-people" class="input-label"
+                      >No. of people</label
+                    >
+                    <select id="input-people" class="input-select">
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                      <option value="4">Four</option>
+                      <option value="5">Five</option>
+                      <option value="6">Above 5</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-fourth">
+                <button class="search-button">Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="offers" class="site-section offers-section"></div>
+    <div id="contact" class="site-section contact-section"></div>
     <script src="js/scripts.js"></script>
   </body>
 </html>
