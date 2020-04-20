@@ -17,3 +17,17 @@ document
       document.getElementById("full-menu").classList.add("hidden");
     });
   });
+
+document
+  .getElementById("main-menu")
+  .querySelectorAll("li")
+  .forEach((el) => {
+    el.addEventListener("click", function () {
+      this.parentElement.querySelectorAll("li").forEach((li) => {
+        if (li.classList.contains("active")) {
+          li.classList.remove("active");
+        }
+      });
+      this.classList.add("active");
+    });
+  });
