@@ -28,6 +28,12 @@ document
           li.classList.remove("active");
         }
       });
+      if (!document.getElementById("header").classList.contains("move-up")) {
+        document.getElementById("header").classList.add("move-up");
+      }
+      if (this === this.parentElement.querySelector("li")) {
+        document.getElementById("header").classList.remove("move-up");
+      }
       this.classList.add("active");
     });
   });
