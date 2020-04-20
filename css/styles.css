@@ -16,6 +16,10 @@ button,
 input {
   font-family: "Montserrat", sans-serif;
 }
+
+button:hover {
+  opacity: 0.8;
+}
 .no-margin {
   margin: 0;
 }
@@ -607,6 +611,19 @@ div {
   border: none;
   outline: none;
   cursor: pointer;
+  width: 100%;
+}
+
+.subscribe-text {
+  opacity: 0.9;
+  background: rgba(254, 64, 91, 0.79);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin: 15px;
+  width: 100%;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
 }
 /*#endregion */
 
@@ -748,7 +765,14 @@ div {
   .subscribe-button {
     padding-left: 8px;
     padding-right: 8px;
+    font-size: 12px;
   }
 }
 
 /*#endregion */
+
+@keyframes slide {
+  100% {
+    left: 0;
+  }
+}
