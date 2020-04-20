@@ -1,75 +1,23 @@
 # CTEC3905 Assignment
 
-This is very basic boilerplate code for you to get started with.
+Website: https://p17195197.github.io/travelo/
 
 ## index.html
 
-The `index.html` file includes a basic template with a link to the `css/styles.css` file and a script tag after the main content which links to the `js/scripts.js` file.
-
-```
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P-Number</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  
-  <h1>Hello World</h1>
-
-  <script src="js/scripts.js"></script>
-</body>
-</html>
-```
+The `index.html` file includes the HTML code for all the sections of the website.
 
 ## css/styles.css
 
-The `css/styles.css` file contains a basic starting template for a responsive page.
+The `css/styles.css` file contains all the styles applicable to desktop screens, tablet screen size and smart phone screen size.
 
-```
-/* MOBILE AND GLOBAL STYLES */
+## js/
 
-/* applies to screens smaller than 500px (first breakpoint) */
-/* and above unless overwritten below */
+- menu.js
+- planning.js
+- newsletter.js
 
-body {
-  background: #fcc;
-} 
+These files contain the script for DOM manipulation and handling the menu according to screen resolution.
 
+## images/
 
-
-/* TABLET STYLES */
-
-@media screen and (min-width: 500px) {
-
-  /* applies to screens wider than 499px */
-  
-  body {
-    background: #cfc;
-  } 
-}
-
-
-
-/* DESKTOP STYLES */
-
-@media screen and (min-width: 1000px) {
-
-  /* applies to screens wider than 999px */
-
-  body {
-    background: #ccf;
-  } 
-}
-
-```
-
-## js/scripts.js
-
-The `js/scripts.js` file contains a simple console.log statement to confirm that it is being executed.
-
-```
-console.log("hello");
-```
+Contains the images used in the website
