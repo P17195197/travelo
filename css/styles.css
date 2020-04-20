@@ -463,6 +463,89 @@ div {
 
 /*#endregion */
 
+/*#region offers region */
+.offers-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#offers-bg-img {
+  background-image: url(../images/offers-bg.jpg);
+}
+
+.offer-item {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.offer-container {
+  padding-top: 100px;
+}
+
+.offer-item-content {
+  background: rgba(254, 64, 91, 0.79);
+  padding-top: 53px;
+  padding-bottom: 35px;
+  color: #ffffff;
+  text-align: center;
+  padding-left: 90px;
+  padding-right: 80px;
+}
+
+.offer-location {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.offer-percentage {
+  font-size: 120px;
+  font-weight: 100;
+  line-height: 0.75;
+  margin-top: 14px;
+  text-align: left;
+}
+
+.offer-type {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 7px;
+  line-height: 1.1;
+}
+
+.offer-description {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.offer-button {
+  margin-top: 37px;
+  display: inline-block;
+  width: 161px;
+  height: 56px;
+  background: #131a2f;
+}
+
+.offer-button a {
+  display: block;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 56px;
+}
+/*#endregion */
 /*#region tablet styles */
 @media screen and (min-width: 500px) and (max-width: 999px) {
   /* applies to screens wider than 499px */
@@ -508,6 +591,19 @@ div {
   .col-price {
     padding-left: 0;
     padding-right: 5px;
+  }
+
+  .offer-percentage {
+    font-size: 90px;
+  }
+
+  .offer-item-content {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .offer-type {
+    font-size: 21px;
   }
 }
 
@@ -574,6 +670,15 @@ div {
 
   .price-row {
     left: 15px;
+  }
+
+  .offer-item {
+    margin-bottom: 30px;
+  }
+
+  .offer-item-content {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
