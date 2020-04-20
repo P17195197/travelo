@@ -12,6 +12,10 @@ body {
   background: #fcc;
 }
 
+button,
+input {
+  font-family: "Montserrat", sans-serif;
+}
 .no-margin {
   margin: 0;
 }
@@ -368,6 +372,7 @@ div {
 
 .search-form {
   color: #fff;
+  margin-top: 20px;
 }
 
 .input {
@@ -397,7 +402,7 @@ div {
   color: #e86161;
   border: solid 2px rgba(255, 255, 255, 0.5);
   background: transparent;
-  padding-left: 20px;
+  padding-left: 5px;
 }
 
 .search-button {
@@ -546,6 +551,61 @@ div {
   line-height: 56px;
 }
 /*#endregion */
+
+/*#region newsletter region */
+
+.subscribe-form {
+  margin: 20px;
+}
+
+.newsletter-section {
+  width: 100%;
+  padding-top: 63px;
+  padding-bottom: 70px;
+  z-index: 0;
+  background: transparent;
+}
+
+.newsletter-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  background: transparent;
+}
+
+#newsletter-bg-img {
+  background-image: url(../images/planning-bg.jpg);
+}
+
+.newsletter-email {
+  width: 70%;
+  max-width: 70%;
+}
+
+.newsletter-submit {
+  width: 30%;
+  max-width: 30%;
+}
+
+.subscribe-button {
+  display: inline-block;
+  height: 62px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 52px;
+  padding-left: 46px;
+  padding-right: 46px;
+  background: #fe435b !important;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/*#endregion */
+
 /*#region tablet styles */
 @media screen and (min-width: 500px) and (max-width: 999px) {
   /* applies to screens wider than 499px */
@@ -679,6 +739,11 @@ div {
   .offer-item-content {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .subscribe-button {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
